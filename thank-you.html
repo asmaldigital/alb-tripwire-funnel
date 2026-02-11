@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're In! Get Started | AI Lead Builder</title>
+  <meta name="description" content="Welcome to AI Lead Builder. Access your GPTs, guides, and resources here.">
+  <link rel="stylesheet" href="css/funnel.css">
+</head>
+<!--
+  ============================================
+  GHL FUNNEL IMPLEMENTATION NOTES
+  ============================================
+  GHL FUNNEL STEP: Thank You page (final step for all paths)
+  SHOWN: After all purchase/decline paths complete
+  GHL ACTION: Trigger welcome email sequence based on tags
+  CONDITIONAL CONTENT: Show different blocks based on purchase tags
+  - tripwire-buyer only: Show GPT access + downloads + community CTA
+  - starter-bundle: Show all 5 GPT access links + downloads
+  - alb-member: Show GPT links + ALB login + community + next call date
+  - alb-annual: Same as alb-member + strategy call booking link
+  NOTE TO VA: Use GHL conditional visibility to show/hide sections based on contact tags
+  ============================================
+-->
+<body>
+
+<!-- SECTION 1: Hero -->
+<section class="section section-dark">
+  <div class="container text-center">
+    <div class="hero">
+      <h1>You're In! Here's Everything You Need to Get Started.</h1>
+      <p class="subheadline">Your access details are being sent to your email right now. Follow the steps below to start generating client-attracting copy immediately.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: Access Delivery - Tripwire (always shown) -->
+<!-- GHL: Always show this section for all buyers -->
+<section class="section section-light">
+  <div class="container">
+    <div class="delivery-card">
+      <h4>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--electric-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Your Client Magnet Copy GPT
+      </h4>
+      <ul class="benefit-list">
+        <li><strong>Access the GPT:</strong> <a href="#">[GPT Link. VA will insert actual URL]</a></li>
+        <li><strong>Quick Start Guide:</strong> <a href="#">[Download link. VA will insert]</a></li>
+        <li><strong>10 Prompt Templates:</strong> <a href="#">[Download link. VA will insert]</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: Access Delivery - Starter Bundle (conditional) -->
+<!-- GHL: Only show if contact has tag "starter-bundle" -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="delivery-card">
+      <h4>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        Your Starter Bundle GPTs
+      </h4>
+      <ul class="benefit-list">
+        <li><strong>Client Magnet Copy:</strong> <a href="#">[GPT Link. VA will insert]</a></li>
+        <li><strong>Ideal Customer Profile Generator:</strong> <a href="#">[GPT Link. VA will insert]</a></li>
+        <li><strong>Social Media Copywriter:</strong> <a href="#">[GPT Link. VA will insert]</a></li>
+        <li><strong>Short Form Video Script Writer:</strong> <a href="#">[GPT Link. VA will insert]</a></li>
+        <li><strong>Content Velocity Pro:</strong> <a href="#">[GPT Link. VA will insert]</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: Access Delivery - AI Lead Builder (conditional) -->
+<!-- GHL: Only show if contact has tag "alb-member" -->
+<section class="section section-light">
+  <div class="container">
+    <div class="delivery-card">
+      <h4>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--electric-cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Your AI Lead Builder Membership
+      </h4>
+      <ul class="benefit-list">
+        <li><strong>Login to AI Lead Builder:</strong> <a href="#">[Platform login URL. VA will insert]</a></li>
+        <li><strong>Access all 19 AI Marketing Assistants:</strong> <a href="#">[GPT collection link. VA will insert]</a></li>
+        <li><strong>Claude Skills Training:</strong> Available in your course dashboard. Learn to build Thinking AI trained on your business.</li>
+        <li><strong>Join the Community:</strong> <a href="#">[Community link. VA will insert]</a></li>
+        <li><strong>Next Live Call:</strong> Every Wednesday. <a href="#">[add next date and link]</a></li>
+        <li><strong>AI Growth Accelerator Course:</strong> Available in your dashboard</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: Strategy Call Booking (conditional) -->
+<!-- GHL: Only show if contact has tag "alb-annual" -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="delivery-card">
+      <div class="bonus-box" style="margin: 0;">
+        <p class="bonus-label">ANNUAL MEMBER BONUS</p>
+        <h3>Book Your FREE Strategy Call with Muhammad</h3>
+        <p class="mt-2">As an annual member, you get a private 30-minute Thinking AI strategy call. Muhammad will map out your custom Claude Projects and show you exactly where AI will have the biggest impact on your business. Book your spot now.</p>
+        <div class="cta-wrapper" style="margin-bottom: 0;">
+          <a href="#" class="btn btn-primary btn-lg">Book My Strategy Call</a>
+          <!-- GHL NOTE: Link to Muhammad's calendar booking page (Calendly or GHL calendar). -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: What To Do Next -->
+<section class="section section-dark">
+  <div class="container">
+    <h2 class="text-center mb-4">Your Next 3 Steps</h2>
+    <div class="next-steps" style="max-width: 640px; margin: 0 auto;">
+      <div class="step">
+        <div>
+          <p style="margin-bottom: 0;"><strong style="color: var(--white);">Check your email</strong>. Your access links and login details are on their way (check spam if you don't see them in 5 minutes)</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <p style="margin-bottom: 0;"><strong style="color: var(--white);">Open the Client Magnet Copy GPT</strong>. Follow the Quick Start Guide to get your first piece of copy in under 10 minutes</p>
+        </div>
+      </div>
+      <div class="step">
+        <div>
+          <p style="margin-bottom: 0;"><strong style="color: var(--white);">Deploy your copy</strong>. Put it to work in your marketing and watch the responses roll in</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: Community CTA -->
+<!-- GHL: Show only for tripwire-only and starter-bundle buyers -->
+<section class="section section-light">
+  <div class="container text-center">
+    <h2 class="mb-2">Join Our Free Community</h2>
+    <p style="max-width: 560px; margin: 0 auto 24px;">Connect with other business owners using AI to grow their businesses. Share wins, get feedback, and see what's possible.</p>
+    <div class="cta-wrapper" style="margin-bottom: 0;">
+      <a href="#" class="btn btn-primary btn-lg">Join the Community</a>
+      <!-- GHL NOTE: Link to community (Facebook Group, Skool, or GHL community). -->
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: Footer -->
+<footer class="section-dark" style="padding: 24px 0; text-align: center;">
+  <div class="container">
+    <p style="font-size: 1rem; color: var(--cool-gray); margin-bottom: 8px;">Questions? Email <a href="mailto:support@aileadbuilder.com" style="color: var(--electric-cyan);">support@aileadbuilder.com</a></p>
+    <p class="text-sm" style="color: var(--cool-gray); margin-bottom: 0;">AI Lead Builder | Simplify AI. Amplify Growth.</p>
+  </div>
+</footer>
+
+</body>
+</html>

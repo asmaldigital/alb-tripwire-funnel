@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save $867/Year | Upgrade to Annual | AI Lead Builder</title>
+  <meta name="description" content="Lock in your annual rate and save $867 per year. Plus get a FREE 1-on-1 strategy call with Muhammad.">
+  <link rel="stylesheet" href="css/funnel.css">
+</head>
+<!--
+  ============================================
+  GHL FUNNEL IMPLEMENTATION NOTES
+  ============================================
+  GHL FUNNEL STEP: OTO page (after Step 2 acceptance)
+  SHOWN: After buyer accepts Step 2 ($47 ALB)
+  REDIRECT ON ACCEPT: → thank-you.html
+  REDIRECT ON DECLINE: → thank-you.html
+  GHL TAG ON UPGRADE: alb-annual
+  GHL ACTION: Switch subscription from monthly to annual ($1,497/yr)
+  ONE-CLICK UPSELL: Yes
+  ============================================
+-->
+<body>
+
+<!-- SECTION 1: Confirmation Bar -->
+<div class="confirmation-bar">
+  <span class="checkmark">&#10003;</span> Order Confirmed! Welcome to AI Lead Builder.
+</div>
+
+<!-- SECTION 2: Access Note -->
+<section class="section section-light" style="padding: 32px 0;">
+  <div class="container text-center">
+    <p style="font-size: 1.1rem; color: var(--cool-gray); margin-bottom: 0;">Your login details and GPT access links will be sent to your email within 5 minutes.</p>
+  </div>
+</section>
+
+<!-- SECTION 3: Video Placeholder -->
+<section class="section section-light" style="padding-top: 0;">
+  <div class="container">
+    <div class="video-placeholder">
+      <div class="play-btn">&#9654;</div>
+      <p>Muhammad's Welcome Video. Add video URL in GHL</p>
+      <!-- GHL NOTE: Replace this placeholder with embedded video. Use GHL video element or Wistia/Vimeo embed. -->
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: Headline -->
+<section class="section section-light" style="padding-top: 0;">
+  <div class="container text-center">
+    <h1>Save $867 Per Year. Lock In Your Annual Rate.</h1>
+  </div>
+</section>
+
+<!-- SECTION 5: Price Comparison -->
+<section class="section section-light" style="padding-top: 0;">
+  <div class="container text-center">
+    <div class="price-comparison">
+      <div class="price-option monthly">
+        <p class="plan-name">Monthly</p>
+        <p class="price">$2,364<span class="per-year">/yr</span></p>
+        <p class="text-sm" style="color: var(--cool-gray); margin-bottom: 0;">$197 x 12 months</p>
+      </div>
+      <div class="price-option annual">
+        <span class="best-value">BEST VALUE</span>
+        <p class="plan-name">Annual</p>
+        <p class="price">$1,497<span class="per-year">/yr</span></p>
+        <p class="text-sm" style="color: var(--cool-gray); margin-bottom: 0;">One payment, 12 months access</p>
+      </div>
+    </div>
+    <div class="savings-badge">You Save $867 (37%)</div>
+  </div>
+</section>
+
+<!-- SECTION 6: Bonus -->
+<section class="section section-light" style="padding-top: 0;">
+  <div class="container">
+    <div class="bonus-box">
+      <p class="bonus-label">UPGRADE BONUS</p>
+      <h3>FREE 1-on-1 Strategy Call with Muhammad</h3>
+      <p class="mt-2">Upgrade to annual today and get a private 30-minute strategy call with Muhammad to map out your Thinking AI implementation plan. He'll review your business, identify your biggest opportunities, and give you a custom action plan for building Claude Projects trained on your specific business.</p>
+      <p class="bonus-value mt-2">Valued at $500. Yours FREE with annual upgrade</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: CTA -->
+<section class="section section-dark">
+  <div class="container text-center">
+    <div class="cta-wrapper">
+      <a href="#" class="btn btn-primary btn-lg btn-block" style="max-width: 560px; margin: 0 auto;">Upgrade to Annual and Claim My Free Strategy Call</a>
+      <p class="cta-subtext" style="color: var(--light-gray);">$1,497 charged today. Then $1,497/year. Cancel anytime.</p>
+      <!-- GHL NOTE: Link this button to the one-click upsell action. On click: switch subscription to annual ($1,497/yr), add tag "alb-annual", redirect to thank-you.html -->
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: Countdown Timer -->
+<section class="section section-light">
+  <div class="container text-center">
+    <p class="font-heading font-semibold text-lg" style="color: var(--deep-navy); margin-bottom: 16px;">This upgrade offer expires in:</p>
+    <div class="countdown">
+      <div class="unit">
+        <span class="digit" id="hours">00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="unit">
+        <span class="digit" id="minutes">00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="unit">
+        <span class="digit" id="seconds">00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <!-- GHL NOTE: Replace with GHL countdown timer element. Set to evergreen countdown (e.g., 30 minutes from page load). -->
+  </div>
+</section>
+
+<!-- SECTION 9: Why Upgrade -->
+<section class="section section-dark">
+  <div class="container">
+    <h2 class="text-center mb-3">Why Smart Members Choose Annual</h2>
+    <ul class="benefit-list" style="max-width: 640px; margin: 0 auto;">
+      <li>Save $867 every year, that's like getting 4+ months free</li>
+      <li>Lock in today's price. Annual members are protected from future price increases</li>
+      <li>Free Strategy Call with Muhammad, a $500 value only for annual members</li>
+      <li>Priority access to new Claude Skills and Thinking AI training as they're released</li>
+      <li>Stronger commitment = stronger results. Annual members consistently outperform monthly</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION 10: No Thanks -->
+<section class="section section-light" style="padding: 32px 0;">
+  <div class="container">
+    <div class="no-thanks">
+      <a href="thank-you.html">No thanks, I'll stay on the monthly plan</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Footer -->
+<footer class="section-dark" style="padding: 24px 0; text-align: center;">
+  <div class="container">
+    <p class="text-sm" style="color: var(--cool-gray); margin-bottom: 0;">AI Lead Builder | <a href="https://aileadbuilder.com" style="color: var(--electric-cyan);">aileadbuilder.com</a> | All rights reserved.</p>
+    <p class="text-sm" style="color: var(--cool-gray); margin-bottom: 0; margin-top: 8px;"><a href="#" style="color: var(--cool-gray);">Privacy Policy</a> &nbsp;|&nbsp; <a href="#" style="color: var(--cool-gray);">Terms of Service</a> &nbsp;|&nbsp; <a href="#" style="color: var(--cool-gray);">Contact</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
