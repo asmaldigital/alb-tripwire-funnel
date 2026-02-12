@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Growth Score Quiz | AI Lead Builder</title>
+  <meta name="description" content="Take the 2-minute AI Growth Score assessment. Discover your AI readiness score, your #1 growth opportunity, and a personalized action plan for your business.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="What's Your AI Growth Score?">
+  <meta property="og:description" content="7 questions. 2 minutes. Discover your #1 AI growth opportunity.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="quiz.css">
+
+  <!-- Favicon (optional — swap with your own) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <style>
+    /* Inline critical: prevent FOUC on the body */
+    body.quiz-body { background: #0A1628; }
+  </style>
+</head>
+<body class="quiz-body">
+
+  <div class="quiz-container">
+
+    <!-- Header -->
+    <header class="quiz-header">
+      <div class="quiz-header__logo">AI Lead Builder</div>
+      <div class="quiz-header__subtitle">Simplify AI. Amplify Growth.</div>
+    </header>
+
+    <!-- Progress Bar (hidden on lead capture + results) -->
+    <div class="progress-wrapper">
+      <div class="progress-label">
+        <span class="progress-label__step">Question 1 of 7</span>
+        <span class="progress-label__pct">14%</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+
+    <!-- Screens Wrapper -->
+    <div class="quiz-screens-wrapper">
+
+      <!-- Screen: Lead Capture (created dynamically by JS after Q7, before results) -->
+      <div class="quiz-screen" id="lead-capture"></div>
+
+      <!-- Question screens, calculating screen, and results screen are dynamically created by quiz.js -->
+
+    </div>
+
+  </div>
+
+  <!-- Quiz Logic -->
+  <script src="quiz.js"></script>
+
+</body>
+</html>
